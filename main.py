@@ -1,18 +1,18 @@
 from matplotlib import pyplot as plt
 
 
-#creating a scatter plot of all of the teams that have won superbowls in the past 50 years
 
-playing_years = list(range(1966,2021))
-nfl_teams = ["Cardinals", "Falcons", "Ravens", "Bills", "Panthers", "Bears", "Bengals", "Browns", "Cowboys", "Broncos", "Lions" ,"Packers",
-             "Texans", "Colts", "Jaguars," "Chiefs", "Chargers", "Rams", "Dolphins", "Vikings", "Patriots", "Saints", "Giants", "Jets", "Raiders",
-             "Eagles", "Steelers", "49ers", "Seahawks", "Buccaneers", "Titans", "Commanders"]
+#using the range and list functions to store years since the superbowl started
 
-#function to iterate through playing_years, which will be used as the x-axis for the scatter plot
+playing_years = list(range(1967,2023))
+nfl_teams = ["Packers", "Packers", "Jets", "Chiefs", "Colts", "Cowboys", "Dolphins", "Dolphins", "Steelers", "Steelers", "Raiders", "Cowboys",
+             "Steelers", "Steelers", "Raiders", "49ers", "Commanders", "Raiders" , "49ers", "Bears", "Giants", "Commanders", "49ers", "49ers", "Giants", "Commanders", "Cowboys", "Cowboys", "49ers",
+             "Cowboys", 'Packers', "Broncos", "Broncos", "Rams", "Ravens", "Patriots", "Buccaneers", "Patriots", "Patriots", "Steelers", "Colts", "Giants", "Steelers",
+             "Saints", "Packers", "Giants", "Ravens", "Seahawks", "Patriots", "Broncos", "Patriots", "Eagles", "Patriots", "Chiefs", "Buccaneers", "Rams"]
 
-plt.axis([nfl_teams, None, 1966,2021])
-plt.scatter(nfl_teams)
 
+# scatter plot corresponding the playing_years to the nfl_teams list indices
+plt.scatter(playing_years, nfl_teams)
 plt.show()
 
 
